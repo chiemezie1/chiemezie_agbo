@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-bg-color: #F5F7FA; /* Light gray background */
+  --light-text-color: #333333; /* Medium dark text color */
+  --light-accent-color: #007BFF; /* Softer blue accent color */
+}
+
+.dark {
+  --light-bg-color: #1A202C; /* Dark mode background */
+  --light-text-color: #EDF2F7; /* Light text for dark mode */
+  --light-accent-color: #63B3ED; /* Accent color remains the same */
+}
+
+/* Tailwind CSS Custom Styles */
+body {
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+}
+
+a {
+  color: var(--light-accent-color);
+}
+
+button {
+  background-color: var(--light-accent-color);
+  color: white;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  overflow: hidden; /* Hide the scrollbar */
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
