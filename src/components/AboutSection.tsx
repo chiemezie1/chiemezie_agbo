@@ -64,7 +64,7 @@ export default function AboutMe() {
         variants={staggerChildren}
       >
         <motion.h2
-          className="text-4xl text-gray-800 font-bold mt-8 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
+          className="text-4xl dark:text-gray-800 text-white font-bold mt-8 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
           variants={fadeInUp}
           transition={{ duration: 0.6 }}
         >
@@ -93,7 +93,7 @@ export default function AboutMe() {
           </p>
         </motion.div>
         <motion.h1
-          className="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
+          className="text-4xl dark:text-gray-800 text-white font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
