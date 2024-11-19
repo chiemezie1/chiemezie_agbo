@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
 :root {
   --light-bg-color: #F5F7FA; /* Light gray background */
   --light-text-color: #333333; /* Medium dark text color */
