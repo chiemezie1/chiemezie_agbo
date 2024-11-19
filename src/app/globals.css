@@ -26,16 +26,6 @@ body {
   --light-accent-color: #63B3ED; /* Accent color remains the same */
 }
 
-/* Tailwind CSS Custom Styles */
-body {
-  background-color: var(--light-bg-color);
-  color: var(--light-text-color);
-}
-
-a {
-  color: var(--light-accent-color);
-}
-
 button {
   background-color: var(--light-accent-color);
   color: white;

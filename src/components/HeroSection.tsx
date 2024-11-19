@@ -15,7 +15,7 @@ export default function HeroSection({ controls }: HeroSectionProps) {
         custom={0}
         transition={{ delay: 0.2 }}
       >
-        <h2 className="text-5xl font-bold mb-6 leading-tight">
+        <h2 className="text-4xl font-bold mb-12 leading-tight">
           <span className="gradient-text blue-teal">Full-Stack Developer</span>
           <br />
           <span className="ampersand"> & </span>
@@ -48,7 +48,7 @@ export default function HeroSection({ controls }: HeroSectionProps) {
         className="flex space-x-4"
       >
         <motion.a
-          href="#project"
+          href="#my-project"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

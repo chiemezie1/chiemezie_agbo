@@ -10,14 +10,14 @@ interface HeaderProps {
 
 export default function Header({ isDarkMode, toggleDarkMode }: HeaderProps) {
   return (
-    <header className="flex justify-between items-center mb-8 px-4 py-3">
+    <header className="flex justify-between items-center mb-6 px-4">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl text-gray-700 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text">
-          CHIEMEZIE AGBO        </h1>
+        <h1 className="text-3xl text-gray-600 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text">
+          Chiemezie Agbo        </h1>
       </motion.div>
 
       <motion.button

@@ -8,7 +8,7 @@ export const ProjectsSection: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section className="py-16 bg-background text-foreground">
+    <section className="py-16 bg-background text-foreground" id="my-project">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">My Projects</h2>
 
