@@ -53,7 +53,7 @@ export default function HeroSection({ controls }: HeroSectionProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          View My Projects
+          View Projects
         </motion.a>
         <motion.a
           href="https://medium.com/@chiemezieagbo1"
@@ -63,7 +63,7 @@ export default function HeroSection({ controls }: HeroSectionProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Read My Blog
+          Read Blog
         </motion.a>
       </motion.div>
     </div>
