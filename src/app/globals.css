@@ -77,3 +77,21 @@ button {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.blue-teal {
+  background-image: linear-gradient(to right, #2563eb, #0d9488); /* from-blue-600 to-teal-600 */
+}
+
+.purple-pink {
+  background-image: linear-gradient(to right, #9333ea, #db2777); /* from-purple-600 to-pink-600 */
+}
+
+.ampersand {
+  color: #4b5563; /* text-gray-600 */
+}

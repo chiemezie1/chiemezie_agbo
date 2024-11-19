@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ controls }: HeroSectionProps) {
   return (
-    <div className="space-y-8">
+    <div className="space-y-3">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={controls}
@@ -16,16 +16,13 @@ export default function HeroSection({ controls }: HeroSectionProps) {
         transition={{ delay: 0.2 }}
       >
         <h2 className="text-5xl font-bold mb-6 leading-tight">
-          <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-            Full-Stack Developer
-          </span>
+          <span className="gradient-text blue-teal">Full-Stack Developer</span>
           <br />
-          <span className="text-gray-600"> & </span>
+          <span className="ampersand"> & </span>
           <br />
-          <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Blockchain Enthusiast
-          </span>
+          <span className="gradient-text purple-pink">Blockchain Enthusiast</span>
         </h2>
+
       </motion.div>
 
       <motion.div
