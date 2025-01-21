@@ -10,8 +10,8 @@ const blogPosts: BlogPost[] = [
     },
     {
         id: 2,
-        title: "Python’s Integer Object Caching: A Closer Look at Memory Optimization",
-        description: "Python’s simplicity and readability are augmented by its unique feature: everything is an object. This project delves into Python object caching, focusing on memory optimization for integer objects. Python's object caching, especially for integers, reflects the language’s commitment to efficient memory management, optimizing performance, and reducing memory overhead.",
+        title: "Python's Integer Object Caching: A Closer Look at Memory Optimization",
+        description: "Python's simplicity and readability are augmented by its unique feature: everything is an object. This project delves into Python object caching, focusing on memory optimization for integer objects. Python's object caching, especially for integers, reflects the language's commitment to efficient memory management, optimizing performance, and reducing memory overhead.",
         date: "2024-01-31",
         link: "https://medium.com/@chiemezieagbo1/pythons-integer-object-caching-a-closer-look-at-memory-optimization-4555d07b955f"
     },
@@ -31,7 +31,7 @@ const blogPosts: BlogPost[] = [
     },
     {
         id: 5,
-        title: "An Introduction to USDC and Circle’s Web3 Services with a Focus on Programmable Wallets",
+        title: "An Introduction to USDC and Circle's Web3 Services with a Focus on Programmable Wallets",
         description: "The write-up details the features and benefits of Circle's Web3 services and USDC. It clearly explains how these services can transform digital finance by providing stability, reducing transaction costs, and simplifying cross-border payments.",
         date: "2024-04-26",
         link: "https://medium.com/@chiemezieagbo1/an-introduction-to-usdc-and-circles-web3-services-with-a-focus-on-programmable-wallets-c906bdb0eadb"
@@ -52,11 +52,25 @@ const blogPosts: BlogPost[] = [
     },
     {
         id: 8,
-        title: "What’s the point in having www in a URL?",
+        title: "What's the point in having www in a URL?",
         description: "This article explains the purpose of 'www' in a URL and why it's commonly seen in web addresses. It explores the technical background and whether 'www' is still necessary in modern web development.",
         date: "2024-05-31",
         link: "https://medium.com/@chiemezieagbo1/whats-the-point-in-having-www-in-a-url-3d84c9e68596"
     },
+    {
+        id: 9,
+        title: "Prove Online Facts Without Revealing Too Much",
+        description: "This article explores TLSNotary, a tool that allows users to generate verifiable, cryptographic proofs of online interactions while revealing only the information they choose. It demonstrates how to prove details about social media accounts without exposing sensitive information.",
+        date: "2024-11-25",
+        link: "https://medium.com/@chiemezieagbo1/prove-online-facts-without-revealing-too-much-9c3262624064"
+    },
+    {
+        id: 10,
+        title: "Abstraction Using EIP-4337",
+        description: "This comprehensive overview of Ethereum account abstraction explains the concept, its importance, and provides a practical guide to implementing it using EIP-4337. It covers the fundamental concepts and includes a basic implementation example using the Ethereum Foundation's code.",
+        date: "2024-12-05",
+        link: "https://medium.com/@chiemezieagbo1/in-2021-stefan-thomas-lost-access-to-220-million-worth-of-bitcoin-because-he-couldnt-remember-3fa445e9d29f"
+    }
 ];
 
 export default blogPosts;
