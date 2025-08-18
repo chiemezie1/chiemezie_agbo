@@ -1,34 +1,63 @@
-# Chiemezie Agbo's Personal Site
+# Chiemezie Agbo - Portfolio
 
-A portfolio and blog showcasing my skills as a Full-Stack Developer and Blockchain Enthusiast.
+Modern portfolio website for a Full-Stack Software Engineer specializing in Web2 and Web3 development.
 
-## Features
+## 🚀 Quick Start
 
-- Responsive design with dark mode
-- Animated UI using Framer Motion
-- Project showcase and blog integration
-- Skills and technologies section
-
-## Tech Stack
-
-Next.js 13, React 18, TypeScript, Tailwind CSS, Framer Motion
-
-## Quick Start
-
-1. Clone the repo 
-```
+```bash
+# Clone the repository
 git clone https://github.com/chiemezie1/chiemezie_agbo.git
+cd chiemezie_agbo
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
-2. Install dependencies: `npm install`
-3. Run dev server: `npm run dev`
-4. Open [http://localhost:3000](http://localhost:3000)
 
-## Contact
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Email: [chiemezieagbo1@gmail.com]
-LinkedIn: [https://www.linkedin.com/in/chiemezieagbo/]
-Medium: [@chiemezieagbo1](https://medium.com/@chiemezieagbo1)
+## 🛠 Tech Stack
+
+- **Next.js 14** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **EmailJS** - Contact form
+
+## ⚙️ Environment Setup
+
+Create a `.env.local` file for the contact form:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+## 📝 Customization
+
+- **Personal Info**: Edit `src/lib/constants.ts`
+- **Bio & Experience**: Update `src/data/personal.ts`
+- **Projects**: Modify `src/data/projects.ts`
+
+## 🚀 Deployment
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to Vercel (recommended)
+# Push to GitHub and connect to Vercel
+```
+
+## 📞 Contact
+
+- **Email**: chiemezieagbo1@gmail.com
+- **LinkedIn**: [linkedin.com/in/chiemezieagbo](https://www.linkedin.com/in/chiemezieagbo/)
+- **GitHub**: [github.com/chiemezie1](https://github.com/chiemezie1)
 
 ---
 
-Built with ❤️ by Chiemezie Agbo
+**Built with ❤️ and guided by faith** - Chiemezie Agbo

@@ -1,54 +1,59 @@
-// pages/index.js
+'use client';
 
-'use client'
-
-import { useState, useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import Header from '@/components/Navbar'
-import MainContent from '@/components/MainContent'
-import AboutMe from '@/components/AboutSection'
-import Footer from '@/components/Footer'
-import { ProjectsSection } from '@/components/Projects/ProjectsSection'
-import { TechnicalWritingSection } from '@/components/TechnicalWriting/TechnicalWritingSection'
-import { ContactSection } from '@/components/ContactSection'
-import  CertificationsSection  from '@/components/Certifications/CertificationsSection'
+import { useState, useEffect } from 'react';
+import Navbar from '@/components/layout/Navbar';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import ExperienceSection from '@/components/sections/ExperienceSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import { TechnicalWritingSection } from '@/components/TechnicalWriting/TechnicalWritingSection';
+import ElevatorPitchSection from '@/components/sections/ElevatorPitchSection';
+import { ContactSection } from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const useDarkMode = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true)
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', isDarkMode)
-  }, [isDarkMode])
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode)
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      setIsDarkMode(true);
+    }
+  }, []);
 
-  return { isDarkMode, toggleDarkMode }
-}
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDarkMode);
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+
+  return { isDarkMode, toggleDarkMode };
+};
 
 export default function HomePage() {
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
-  const controls = useAnimation()
-
-  useEffect(() => {
-    controls.start(i => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: i * 0.2 },
-    }))
-  }, [controls])
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className={`min-h-screen bg-gray-900 text-white dark:bg-gray-100 dark:text-black`}>
-      <div className="container mx-auto px-4 py-12">
-        <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <MainContent controls={controls} />
-        <AboutMe />
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <SkillsSection />
         <ProjectsSection />
         <TechnicalWritingSection />
-        <CertificationsSection />
+        <ElevatorPitchSection />
         <ContactSection />
-        <Footer />
-      </div>
+      </main>
+
+      <Footer />
     </div>
-  )
+  );
 }

@@ -2,7 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, HTMLMotionProps } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
-import { SocialIconProps, FormState } from './types';
+
+// Types
+interface SocialIconProps {
+  icon: React.ComponentType;
+  href: string;
+  label: string;
+}
+
+interface FormState {
+  app: string;
+  name: string;
+  email: string;
+  message: string;
+}
 
 // SocialIcon Component
 const SocialIcon: React.FC<SocialIconProps> = ({ icon: Icon, href, label }) => (
@@ -137,7 +150,7 @@ export const ContactSection: React.FC = () => {
     <section className="py-20 dark:bg-gray-100 bg-gray-800">
       <div className="container mx-auto px-4 max-w-5xl">
         <motion.h2
-          className="text-4xl font-bold mb-12 text-center dark:text-gray-800 text-white"
+          className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
