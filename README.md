@@ -51,6 +51,8 @@ npm run build
 # Deploy to Vercel (recommended)
 # Push to GitHub and connect to Vercel
 ```
+## Live deployment
+https://tinyurl.com/chiemezieagbo
 
 ## 📞 Contact
 
