@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaCode, FaRocket, FaHeart, FaCoffee } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaCode, FaRocket, FaHeart, FaCoffee, FaPen } from 'react-icons/fa';
 import { PERSONAL_INFO, SOCIAL_LINKS, ANIMATION_VARIANTS } from '@/lib/constants';
 import { useEffect } from 'react';
 
@@ -108,100 +108,67 @@ export default function HeroSection() {
             }}
           >
             <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[420px] lg:h-[420px]">
-              {/* Professional Image Container with Overlap Effect */}
-              <motion.div
-                className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-800 dark:to-gray-900 border-4 border-white dark:border-gray-700 lg:transform lg:translate-x-8 lg:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] lg:dark:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)]"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              >
+              {/* Professional outer frame */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-100 via-white to-purple-100 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 p-2 lg:transform lg:translate-x-8 shadow-2xl lg:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] lg:dark:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)]">
+                {/* Professional Image Container with Overlap Effect */}
+                <motion.div
+                  className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-slate-50 to-gray-100 dark:from-gray-800 dark:to-gray-900"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                >
+                {/* Professional overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10" />
+
                 <Image
                   src="/images/Agbo_chiemezie.png"
                   alt="Chiemezie Agbo - Full-Stack Software Engineer"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center filter brightness-105 contrast-105"
                   priority
                 />
 
-                {/* Fun Floating Elements */}
+                {/* Professional corner accent */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-500/20 to-transparent z-20" />
+                <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-purple-500/20 to-transparent z-20" />
+
+                {/* Professional Skill Indicators */}
                 <motion.div
-                  className="absolute top-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg"
-                  animate={{
-                    y: [0, -10, 0],
-                    rotate: [0, 5, 0]
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
+                  className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-blue-600 dark:text-blue-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1, duration: 0.5 }}
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <FaCode className="w-4 h-4" />
+                  <FaCode className="w-3 h-3" />
                 </motion.div>
 
                 <motion.div
-                  className="absolute bottom-6 left-6 bg-purple-500 text-white p-3 rounded-full shadow-lg"
-                  animate={{
-                    y: [0, 10, 0],
-                    rotate: [0, -5, 0]
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1
-                  }}
+                  className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1.2, duration: 0.5 }}
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <FaRocket className="w-4 h-4" />
-                </motion.div>
-
-                <motion.div
-                  className="absolute top-1/2 -right-3 bg-green-500 text-white p-2 rounded-full shadow-lg"
-                  animate={{
-                    x: [0, 8, 0],
-                    scale: [1, 1.1, 1]
-                  }}
-                  transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 2
-                  }}
-                >
-                  <FaHeart className="w-3 h-3" />
-                </motion.div>
-
-                <motion.div
-                  className="absolute top-1/4 -left-3 bg-orange-500 text-white p-2 rounded-full shadow-lg"
-                  animate={{
-                    x: [0, -8, 0],
-                    rotate: [0, 10, 0]
-                  }}
-                  transition={{
-                    duration: 3.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 0.5
-                  }}
-                >
-                  <FaCoffee className="w-3 h-3" />
+                  <FaRocket className="w-3 h-3" />
                 </motion.div>
               </motion.div>
 
-              {/* Fun Status Badge */}
+              {/* Professional Status Badge */}
               <motion.div
-                className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-xl border border-gray-200 dark:border-gray-700"
+                className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-6 py-3 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 }}
-                whileHover={{ scale: 1.05 }}
+                transition={{ delay: 1.5 }}
+                whileHover={{ scale: 1.02 }}
               >
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Available for projects
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/30"></div>
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Open to Opportunities
                   </span>
                 </div>
               </motion.div>
+              </div>
             </div>
           </motion.div>
 
@@ -250,8 +217,8 @@ export default function HeroSection() {
                   <span className="text-blue-800 dark:text-blue-300">7+ Smart Contracts</span>
                 </div>
                 <div className="flex items-center gap-2 bg-green-100 dark:bg-green-900/30 px-3 py-1 rounded-full">
-                  <FaCode className="text-green-600 dark:text-green-400" />
-                  <span className="text-green-800 dark:text-green-300">Hackathon Winner</span>
+                  <FaPen className="text-green-600 dark:text-green-400" />
+                  <span className="text-green-800 dark:text-green-300">Technical Writer</span>
                 </div>
                 <div className="flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 px-3 py-1 rounded-full">
                   <FaHeart className="text-purple-600 dark:text-purple-400" />
