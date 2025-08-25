@@ -83,26 +83,7 @@ export default function ElevatorPitchSection() {
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                   30-Second Introduction
-                </h3>
-                
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    Hi, I'm Chiemezie Agbo, a full-stack software engineer who thrives on turning complex problems
-                    into elegant solutions. I specialize in JavaScript, Python, and Solidity, building everything
-                    from traditional web applications to cutting-edge decentralized platforms.
-                  </p>
-
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    During my internship at Grandida LLC, I honed my smart contract development skills, and I've since
-                    won hackathons and had my privacy protocol research featured by Scroll. I believe the best software
-                    blends into the background of daily life, yet powerfully changes it.
-                  </p>
-
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    Engineering is my craft, but innovation is my passion. I'm driven by the challenge of creating
-                    technology that actually works and makes a real difference in people's lives.
-                  </p>
-                </div>
+                </h3>          
               </div>
             </div>
           </motion.div>

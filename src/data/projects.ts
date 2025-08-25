@@ -111,21 +111,6 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: "CarRide Contract",
-    description: "A smart contract for a car ride platform, built using Solidity on the Goerli test network.",
-    overview: "This is a smart contract for a car ride platform using Solidity, built for the Goerli test network with Hardhat. The contract enables users to register as riders or drivers, request rides, accept ride requests, and confirm rides. Key functions include registering riders and drivers, requesting and accepting rides, and confirming rides. Deployed on Goerli at contract address: 0x12175E6C31afc8A5648Aeee20563A7e9d6D29D46.",
-    technologies: ["Solidity", "Hardhat", "Goerli Test Network"],
-    image: "/images/placeholder-project.png",
-    demoLink: "https://blockchain-car-ride.vercel.app/",
-    githubLink: "https://github.com/chiemezie1/blockchain-carRide",
-    featured: false,
-    category: "web3",
-    purpose: "To create a decentralized ride-sharing platform that eliminates intermediaries and provides transparent, secure transactions between riders and drivers.",
-    skillsGained: ["Solidity smart contract development", "Hardhat development environment", "Ethereum testnet deployment", "Smart contract testing", "Decentralized application architecture"],
-    challenges: ["Implementing secure payment escrow logic", "Handling ride state management on-chain", "Optimizing gas costs for frequent transactions", "Creating reliable dispute resolution mechanisms"]
-  },
-  {
-    id: 9,
     title: "StackShop Website",
     description: "An e-commerce website that integrates Affinidi login.",
     overview: "This web application enhances the shopping experience by integrating Affinidi Login. It utilizes user data (location, age) retrieved from Affinidi to provide a personalized shopping experience.",
@@ -140,7 +125,7 @@ export const projects: Project[] = [
     challenges: ["Integrating Affinidi authentication flow", "Implementing privacy-preserving personalization", "Creating seamless user onboarding", "Balancing personalization with privacy"]
   },
   {
-    id: 10,
+    id: 9,
     title: "Mental Health Assistant Chatbot with Sentiment-Based Response Generation",
     description: "An AI chatbot that integrates sentiment analysis to provide personalized emotional support.",
     overview: "This Mental Health Assistant Chatbot uses AI to provide support to users experiencing stress, anxiety, or depression. The chatbot detects the user's mood (positive, neutral, or negative) and generates responses accordingly. Key features include sentiment analysis, intent classification, and natural language response generation using the Llama model. It aims to offer real-time emotional support, though it's not a replacement for professional mental health services.",
