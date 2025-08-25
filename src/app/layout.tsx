@@ -14,13 +14,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Enthusiast",
+  title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Developer",
   description: "Seasoned Software Developer with expertise in blockchain technology, DeFi, and decentralized applications. Bridging Web2 & Web3 with secure, scalable solutions.",
   keywords: "Chiemezie Agbo, Full-Stack Developer, Blockchain Developer, DeFi, Web3, Software Engineer, Next.js, React, Solidity, Ethereum",
   authors: [{ name: "Chiemezie Agbo" }],
   creator: "Chiemezie Agbo",
   openGraph: {
-    title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Enthusiast",
+    title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Developer",
     description: "Seasoned Software Developer with expertise in blockchain technology, DeFi, and decentralized applications.",
     url: "https://chiemezieagbo.com",
     siteName: "Chiemezie Agbo Portfolio",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Enthusiast",
+    title: "Chiemezie Agbo | Full-Stack Developer & Blockchain Developer",
     description: "Seasoned Software Developer with expertise in blockchain technology, DeFi, and decentralized applications.",
     creator: "@ChiemezieAgbo",
   },

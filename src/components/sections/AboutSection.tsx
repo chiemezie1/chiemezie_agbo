@@ -27,9 +27,6 @@ export default function AboutSection() {
                 About Me
               </h2>
             </div>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Full-Stack Engineer • Blockchain Enthusiast • Problem Solver
-            </p>
           </motion.div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -47,44 +44,17 @@ export default function AboutSection() {
                 </div>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-4">
-                    I'm a <strong className="text-blue-600 dark:text-blue-400">full-stack software engineer</strong> who
-                    specializes in bridging Web2 and Web3 ecosystems. With expertise in <strong>JavaScript, Python, and Solidity</strong>,
-                    I transform complex problems into elegant, scalable solutions.
+                    I'm a <strong className="text-blue-600 dark:text-blue-400">full-stack software engineer</strong> who thrives on turning complex problems into elegant solutions. I specialize in building secure, scalable, and high-performance web applications with Python and JavaScript, leveraging AI to create smart tools and streamline workflows, and developing Solidity smart contracts that power decentralized platforms and deliver real-world value to users.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    From traditional web applications to cutting-edge decentralized platforms, I build technology that
-                    doesn't just work—it <em>makes a difference</em>. My approach combines technical precision with
-                    innovative thinking to create software that seamlessly integrates into daily life while driving meaningful change.
+
+                    During my internship at Grandida LLC, I honed my smart contract development skills, deploying 7+ contracts with a strong focus on security. Collaborating with a multidisciplinary team across different fields enhanced my teamwork and communication skills. My curiosity and eagerness to learn have pushed me to participate in multiple hackathons, where I’ve won prizes, and my technical writing skills were recognized when my privacy protocol research was featured by Scroll. I believe the best software blends seamlessly into daily life while creating meaningful impact.
+
+                    Engineering is my craft, but innovation is my passion.
                   </p>
                 </div>
               </div>
 
-              {/* Career Highlights */}
-              <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
-                <div className="flex items-center gap-3 mb-6">
-                  <FaTrophy className="text-yellow-600 dark:text-yellow-400 text-2xl" />
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Career Highlights
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  {keyHighlights.map((highlight, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-start gap-3"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                    >
-                      <div className="w-2 h-2 bg-blue-600 dark:text-blue-400 rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        {highlight}
-                      </p>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
             </motion.div>
 
             {/* Personality Peek & Quick Stats */}
@@ -103,56 +73,17 @@ export default function AboutSection() {
                 <div className="space-y-3 text-sm">
                   <div className="flex items-center gap-2">
                     <span className="text-lg">🏓</span>
-                    <span className="text-gray-700 dark:text-gray-300">Table tennis champion (my reflexes are as fast as my code!)</span>
+                    <span className="text-gray-700 dark:text-gray-300">Table tennis fan – reflexes as sharp as my code</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-lg">☕</span>
-                    <span className="text-gray-700 dark:text-gray-300">Coffee enthusiast (fuel for late-night coding sessions)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">🎯</span>
-                    <span className="text-gray-700 dark:text-gray-300">Problem-solving is my superpower</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">🌍</span>
-                    <span className="text-gray-700 dark:text-gray-300">Passionate about Web3's potential</span>
+                    <span className="text-gray-700 dark:text-gray-300">Coffee enthusiast – fuel for late-night brainstorming</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-lg">📚</span>
-                    <span className="text-gray-700 dark:text-gray-300">Lifelong learner & technical writer</span>
+                    <span className="text-gray-700 dark:text-gray-300">Avid reader & lifelong learner beyond tech</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">🤝</span>
-                    <span className="text-gray-700 dark:text-gray-300">Team player who loves collaboration</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-                <div className="flex items-center gap-3 mb-4">
-                  <FaCode className="text-green-600 dark:text-green-400 text-xl" />
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Quick Stats
-                  </h3>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Smart Contracts</span>
-                    <span className="font-bold text-blue-600 dark:text-blue-400">7+ Deployed</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">DApps Contributed</span>
-                    <span className="font-bold text-purple-600 dark:text-purple-400">6+ Projects</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Hackathon Wins</span>
-                    <span className="font-bold text-green-600 dark:text-green-400">$1,500 Prize</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Featured Articles</span>
-                    <span className="font-bold text-yellow-600 dark:text-yellow-400">Scroll ZKP</span>
-                  </div>
+              
                 </div>
               </div>
 
@@ -165,8 +96,7 @@ export default function AboutSection() {
                       My Mission
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm italic">
-                      "To create technology that serves others, builds opportunities, and sparks hope—guided by faith,
-                      family, and purpose in everything I do."
+                     Is to use software to serve others, create opportunities, and make a meaningful difference, all while enjoying the journey (and a good cup of coffee ☕).
                     </p>
                   </div>
                 </div>

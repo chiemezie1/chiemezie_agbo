@@ -116,58 +116,58 @@ export default function HeroSection() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 >
-                {/* Professional overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10" />
+                  {/* Professional overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10" />
 
-                <Image
-                  src="/images/Agbo_chiemezie.png"
-                  alt="Chiemezie Agbo - Full-Stack Software Engineer"
-                  fill
-                  className="object-cover object-center filter brightness-105 contrast-105"
-                  priority
-                />
+                  <Image
+                    src="/images/Agbo_chiemezie.png"
+                    alt="Chiemezie Agbo - Full-Stack Software Engineer"
+                    fill
+                    className="object-cover object-center filter brightness-105 contrast-105"
+                    priority
+                  />
 
-                {/* Professional corner accent */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-500/20 to-transparent z-20" />
-                <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-purple-500/20 to-transparent z-20" />
+                  {/* Professional corner accent */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-blue-500/20 to-transparent z-20" />
+                  <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-purple-500/20 to-transparent z-20" />
 
-                {/* Professional Skill Indicators */}
-                <motion.div
-                  className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-blue-600 dark:text-blue-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1, duration: 0.5 }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <FaCode className="w-3 h-3" />
+                  {/* Professional Skill Indicators */}
+                  <motion.div
+                    className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-blue-600 dark:text-blue-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 1, duration: 0.5 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <FaCode className="w-3 h-3" />
+                  </motion.div>
+
+                  <motion.div
+                    className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 1.2, duration: 0.5 }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <FaRocket className="w-3 h-3" />
+                  </motion.div>
                 </motion.div>
 
+                {/* Professional Status Badge */}
                 <motion.div
-                  className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 p-2 rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.2, duration: 0.5 }}
-                  whileHover={{ scale: 1.05 }}
+                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-6 py-3 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.5 }}
+                  whileHover={{ scale: 1.02 }}
                 >
-                  <FaRocket className="w-3 h-3" />
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/30"></div>
+                    <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                      Open to Opportunities
+                    </span>
+                  </div>
                 </motion.div>
-              </motion.div>
-
-              {/* Professional Status Badge */}
-              <motion.div
-                className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-6 py-3 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 backdrop-blur-sm"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.5 }}
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/30"></div>
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-                    Open to Opportunities
-                  </span>
-                </div>
-              </motion.div>
               </div>
             </div>
           </motion.div>
@@ -192,11 +192,11 @@ export default function HeroSection() {
                 {PERSONAL_INFO.name}
               </h1>
               <div className="flex flex-wrap items-center gap-2 text-lg">
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">Full-Stack Developer</span>
+                <span className="text-blue-600 dark:text-blue-400 font-semibold">Software Engineer</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-purple-600 dark:text-purple-400 font-semibold">Blockchain Enthusiast</span>
+                <span className="text-purple-600 dark:text-purple-400 font-semibold">Blockchain Developer</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-green-600 dark:text-green-400 font-semibold">Problem Solver</span>
+                <span className="text-green-600 dark:text-green-400 font-semibold">AI Enthusiast</span>
               </div>
             </motion.div>
 
@@ -207,14 +207,14 @@ export default function HeroSection() {
             >
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 I turn complex problems into elegant solutions using <span className="font-semibold text-blue-600 dark:text-blue-400">JavaScript</span>, <span className="font-semibold text-purple-600 dark:text-purple-400">Python</span>, and <span className="font-semibold text-green-600 dark:text-green-400">Solidity</span>.
-                When I'm not coding, you'll find me exploring the latest in Web3 or enjoying a good cup of coffee ☕
+                When I'm not coding, you'll find me exploring the latest in Web3, AI or enjoying a good cup of coffee ☕
               </p>
 
               {/* Fun Stats */}
               <div className="flex flex-wrap gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 px-3 py-1 rounded-full">
                   <FaRocket className="text-blue-600 dark:text-blue-400" />
-                  <span className="text-blue-800 dark:text-blue-300">7+ Smart Contracts</span>
+                  <span className="text-blue-800 dark:text-blue-300">Software</span>
                 </div>
                 <div className="flex items-center gap-2 bg-green-100 dark:bg-green-900/30 px-3 py-1 rounded-full">
                   <FaPen className="text-green-600 dark:text-green-400" />
